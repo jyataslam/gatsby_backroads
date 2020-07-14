@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
@@ -11,9 +11,9 @@ export default function error() {
         <Layout>
             <header className={styles.error}>
                 <Banner title="Oops, this page doesn't exist">
-                    <Link to="/" className="btn-white">
+                    <AniLink fade to="/" className="btn-white">
                         Back To Home Page
-                    </Link>
+                    </AniLink>
                 </Banner>
             </header>
         </Layout>
