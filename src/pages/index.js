@@ -6,6 +6,7 @@ import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
 import About from "../components/About"
 import Services from "../components/Services"
+import FeaturedTours from '../components/Home/FeaturedTours'
 
 export default ({data}) => {
 
@@ -23,6 +24,7 @@ export default ({data}) => {
             </StyledHero>
             <About />
             <Services />
+            <FeaturedTours />
         </Layout>
     )
 }
