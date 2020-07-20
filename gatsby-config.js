@@ -35,10 +35,19 @@ module.exports = {
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
             },
         },
+        {
+            resolve: "gatsby-plugin-robots-txt",
+            options: {
+                host: "https://travelwell-gatsby.netlify.app",
+                sitemap: "https://travelwell-gatsby.netlify.app/sitemap.xml",
+                policy: [{ userAgent: "*", allow: "/" }],
+            },
+        },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
         `gatsby-plugin-transition-link`,
+        `gatsby-plugin-sitemap`,
     ],
 }

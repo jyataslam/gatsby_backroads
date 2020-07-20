@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
+import SEO from '../components/SEO'
 import Title from "../components/Title"
 import BlogCard from "../components/Blog/BlogCard"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
@@ -44,6 +45,7 @@ const blogListTemplate = props => {
 
     return (
         <Layout>
+            <SEO title="Blogs" />
             <section className={styles.blog}>
                 <Title title="Blog" subtitle="pagination" />
                 <div className={styles.center}>
