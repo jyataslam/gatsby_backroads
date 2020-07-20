@@ -9,7 +9,11 @@ export default [
     },
     {
         path: '/blog',
-        text: 'blog'
+        text: 'all blogs'
+    },
+    {
+        path: '/blogs',
+        text: 'blogs pag'
     },
     {
         path: '/contact',

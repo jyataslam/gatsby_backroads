@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
+import SEO from '../components/SEO'
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
 import Banner from "../components/Banner"
@@ -12,10 +13,11 @@ export default ({data}) => {
 
     return (
         <Layout>
+            <SEO title="Home" />
             <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
                 <Banner
-                    title="continue exploring"
-                    info="Explore the great outdoors before you die...get out there ya beautiful bitch"
+                    title="live free. live well."
+                    info="Experience every part of what the world has to offer"
                 >
                     <Link to="/tours" className="btn-white">
                         Explore Tours

@@ -11,10 +11,13 @@ require("dotenv").config({
 module.exports = {
     /* Your site config here */
     siteMetadata: {
-        title: "BackRoads",
+        title: "Travel Well",
         description:
             "Enjoy worldwide tours and discover what makes each destination unique. Forgot your daily routine and say yes to adventure.",
         author: "@jasonyata",
+        twitterUsername: "@jyataslam",
+        image: '/defaultBcg.jpeg',
+        siteUrl: 'https://travelwell-gatsby.netlify.app'
     },
     plugins: [
         {
@@ -32,6 +35,7 @@ module.exports = {
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
             },
         },
+        `gatsby-plugin-react-helmet`,
         `gatsby-plugin-sass`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
