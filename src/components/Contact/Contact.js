@@ -19,7 +19,7 @@ const Contact = () => {
                             name="name"
                             id="name"
                             className={styles.formControl}
-                            placeholder="John Smith"
+                            placeholder="Your Name"
                         />
                     </div>
                     <div>
@@ -29,7 +29,7 @@ const Contact = () => {
                             name="email"
                             id="email"
                             className={styles.formControl}
-                            placeholder="johnsmith@gmail.com"
+                            placeholder="example@email.com"
                         />
                     </div>
                     <div>
@@ -40,7 +40,7 @@ const Contact = () => {
                             cols="30"
                             rows="10"
                             className={styles.formControl}
-                            placeholder="Hello There"
+                            placeholder="Your Message"
                         ></textarea>
                     </div>
                     <div>

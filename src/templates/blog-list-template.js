@@ -6,6 +6,7 @@ import SEO from '../components/SEO'
 import Title from "../components/Title"
 import BlogCard from "../components/Blog/BlogCard"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import Hero from '../components/StyledHero'
 
 import styles from "../css/blog.module.css"
 
@@ -30,6 +31,13 @@ export const query = graphql`
                 }
             }
         }
+        blogBcg: file(relativePath: { eq: "blogBcg.jpeg" }) {
+            childImageSharp {
+                fluid(quality: 90, maxWidth: 4160) {
+                    ...GatsbyImageSharpFluid_withWebp
+                }
+            }
+        }
     }
 `
 
@@ -43,9 +51,12 @@ const blogListTemplate = props => {
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
 
+    const image = props.data.blogBcg.childImageSharp.fluid;
+
     return (
         <Layout>
             <SEO title="Blogs" />
+            <Hero img={image}/>
             <section className={styles.blog}>
                 <Title title="Blog" subtitle="pagination" />
                 <div className={styles.center}>

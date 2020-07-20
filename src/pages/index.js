@@ -16,8 +16,8 @@ export default ({data}) => {
             <SEO title="Home" />
             <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
                 <Banner
-                    title="live free. live well."
-                    info="Experience every part of what the world has to offer"
+                    title="live free. travel well."
+                    info="Experience The Wonders Of The Natural World"
                 >
                     <Link to="/tours" className="btn-white">
                         Explore Tours
