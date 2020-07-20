@@ -13,11 +13,11 @@ module.exports = {
     siteMetadata: {
         title: "Travel Well",
         description:
-            "Enjoy worldwide tours and discover what makes each destination unique. Forgot your daily routine and say yes to adventure.",
+            "Say yes to adventure. Enjoy worldwide tours and discover what makes each destination unique.",
         author: "@jasonyata",
         twitterUsername: "@jyataslam",
-        image: '/defaultBcg.jpeg',
-        siteUrl: 'https://travelwell-gatsby.netlify.app'
+        image: "/defaultBcg.jpeg",
+        siteUrl: "https://travelwell-gatsby.netlify.app",
     },
     plugins: [
         {
@@ -32,7 +32,7 @@ module.exports = {
             options: {
                 spaceId: process.env.CONTENTFUL_SPACE_ID,
                 // Learn about environment variables: https://gatsby.dev/env-vars
-                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
+                accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
             },
         },
         `gatsby-plugin-react-helmet`,
