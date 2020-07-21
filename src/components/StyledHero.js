@@ -23,9 +23,4 @@ export default styled(StyledHero)`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-attachment: fixed;
-
-    @media (max-width: 762px){
-        background-attachment: scroll;
-    }
 `

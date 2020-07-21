@@ -68,6 +68,7 @@ p {
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  border-radius: 25px;
 }
 .btn-white:hover {
   background: var(--mainWhite);
