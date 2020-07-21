@@ -11,13 +11,13 @@ const Day = ({day, info}) => {
 
     return (
         <article className={styles.day}>
-            <h4 onClick={toggleInfo}>
+            <h4>
                 {day}
                 <button className={styles.btn}>
                     <FaAngleDown/>
                 </button>
             </h4>
-            {showInfo && <p>{info}</p>}
+            <p>{info}</p>
         </article>
     )
 }

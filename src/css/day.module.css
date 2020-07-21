@@ -1,10 +1,11 @@
 .day {
   margin: 2rem 0;
+  width: 100%;
 }
 .day h4 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 .btn {
   background: transparent;
@@ -22,6 +23,6 @@
 }
 @media screen and (min-width: 992px) {
   .day h4 {
-    width: 400px;
+    width: 100%;
   }
 }

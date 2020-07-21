@@ -4,6 +4,7 @@
 .center {
   width: 80vw;
   margin: 0 auto;
+  text-align: center;
 }
 .images {
   display: grid;
@@ -19,10 +20,13 @@
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 .info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .info p {
   display: flex;
@@ -37,6 +41,7 @@
 }
 .desc {
   line-height: 2;
+  margin: 0 auto;
 }
 .template h4 {
   text-transform: capitalize;
@@ -46,6 +51,7 @@
 }
 .journey {
   margin: 3rem 0;
+  margin: 0 auto;
 }
 @media screen and (min-width: 992px) {
   .journey,

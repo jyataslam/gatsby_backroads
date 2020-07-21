@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import StyledHero from "../components/StyledHero"
+import Banner from '../components/Banner'
 import Layout from "../components/Layout"
 import Day from "../components/SingleTour/Day"
 import SEO from '../components/SEO'
@@ -55,7 +56,9 @@ const tourTemplate = ({ data }) => {
     return (
         <Layout>
             <SEO title={name} />
-            <StyledHero img={mainImage.fluid} />
+            <StyledHero img={mainImage.fluid}>
+                <Banner title={name} />
+            </StyledHero>
             <section className={styles.template}>
                 <div className={styles.center}>
                     <div className={styles.images}>

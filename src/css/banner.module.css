@@ -19,11 +19,11 @@
   font-size: 1.3rem;
 }
 
-@media screen and (min-width: 0) {
-  .banner {
-    margin-top: -140px;
-  }
+.sub {
+  margin-top: 0;
+}
 
+@media screen and (min-width: 0) {
   .banner h1 {
     font-size: 2rem;
     line-height: 2.5rem;
