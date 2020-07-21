@@ -11,7 +11,7 @@ const Photo = ({ img, className, children, home }) => {
 }
 
 export default styled(Photo)`
-    height: 800px;
+    height: 900px;
     width: 100;
     background-size: cover;
     background-repeat: no-repeat;

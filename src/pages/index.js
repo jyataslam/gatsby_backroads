@@ -8,13 +8,13 @@ import Banner from "../components/Banner"
 import About from "../components/About"
 import Services from "../components/Services"
 import FeaturedTours from "../components/Home/FeaturedTours"
-import Photo from "../components/Photo"
+import PhotoBlock from "../components/Photo"
 
 export default ({ data }) => {
     return (
         <Layout>
             <SEO title="Home" />
-            <StyledHero home="true" img={data.photoBcg.childImageSharp.fluid}>
+            <StyledHero home="true" img={data.blogBcg.childImageSharp.fluid}>
                 <Banner
                     title="live free. travel well."
                     info="Experience The Wonders Of The Natural World"
@@ -26,7 +26,7 @@ export default ({ data }) => {
             </StyledHero>
             <About />
             <Services />
-            <Photo img={data.blogBcg.childImageSharp.fluid} />
+            <PhotoBlock img={data.photoBcg.childImageSharp.fluid} />
             <FeaturedTours />
         </Layout>
     )
