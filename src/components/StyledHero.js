@@ -14,8 +14,8 @@ export default styled(StyledHero)`
     min-height: ${props => props.home ? '100vh': '50vh'};
     background: ${props =>
         props.home
-            ? "linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7))"
-            : "none"};
+            ? "linear-gradient(rgba(63, 208, 212, 0.25), rgba(0, 0, 0, 0.7))"
+            : "linear-gradient(rgba(223, 60, 200, 0.31), rgba(0, 0, 0, 0))"};
     background-position: center;
     background-size: cover;
     opacity: 1 !important;
