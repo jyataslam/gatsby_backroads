@@ -4,9 +4,10 @@
   color: var(--mainWhite);
 }
 .banner h1 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 3.3rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 0 1rem;
   letter-spacing: 6px;
 }
@@ -27,11 +28,16 @@
     font-size: 2rem;
     line-height: 2.5rem;
   }
+
+  .banner p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .banner h1 {
     font-size: 3rem;
+    line-height: 3.5rem;
   }
   .banner p {
     width: 70%;
@@ -41,5 +47,11 @@
 @media screen and (min-width: 992px) {
   .banner {
     margin-top: 0;
+  }
+  .banner h1 {
+    font-size: 4rem;
+  }
+  .banner p {
+    font-size: 1.5rem;
   }
 }

@@ -38,7 +38,7 @@
     overflow: hidden;
 }
 .show-nav {
-    height: 216px;
+    height: 270px;
 }
 .nav-links a {
     display: block;
@@ -60,6 +60,10 @@
     .navbar {
         position: sticky;
     }
+
+    .logo {
+        height: 30px;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -74,6 +78,9 @@
     }
     .logo-btn {
         display: none;
+    }
+    .logo {
+        height: 40px;
     }
     .nav-center {
         max-width: 1170px;

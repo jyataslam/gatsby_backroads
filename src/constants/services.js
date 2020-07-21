@@ -1,20 +1,20 @@
 import React from 'react'
-import { FaWallet, FaTree, FaSocks } from 'react-icons/fa'
+import { FaMountain, FaTree, FaPlane } from 'react-icons/fa'
 
 export default [
     {
-        icon: <FaWallet />,
-        title: 'saving money',
-        text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit provident libero recusandae.'
+        icon: <FaMountain />,
+        title: 'crafted trips',
+        text: 'Enjoy perfectly curated trip itineraries customized to your liking with our unique services.'
     },
     {
         icon: <FaTree />,
         title: 'endless hiking',
-        text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit provident libero recusandae.'
+        text: 'If hiking is what you enjoy, let us show you the views you have always dreamt of'
     },
     {
-        icon: <FaSocks />,
-        title: 'amazing comfort',
-        text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit provident libero recusandae.'
+        icon: <FaPlane />,
+        title: 'amazing experiences',
+        text: "Once in a lifetime experiences, every time. Every trip will be the best you've ever had"
     }
 ]
