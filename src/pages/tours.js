@@ -10,7 +10,7 @@ export default class tours extends Component {
         return (
             <Layout>
                 <SEO title="Tours" />
-                <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid}/>
+                <StyledHero img={this.props.data.blogBcg.childImageSharp.fluid}/>
                 <Tours />
             </Layout>
         )
@@ -20,9 +20,9 @@ export default class tours extends Component {
 
 export const query = graphql`
     {
-        defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+        blogBcg: file(relativePath: { eq: "blogBcg.jpeg" }) {
             childImageSharp {
-                fluid(quality: 90, maxWidth: 4160) {
+                fluid(quality: 100, maxWidth: 4160) {
                     ...GatsbyImageSharpFluid_withWebp
                 }
             }

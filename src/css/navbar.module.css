@@ -27,18 +27,35 @@
     cursor: pointer;
 }
 .logo-icon {
-    color: var(--primaryColor);
+    color: var(--mainBlack);
     font-size: 1.5rem;
 }
 
 .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
     list-style-type: none;
     transition: var(--mainTransition);
-    height: 0;
-    overflow: hidden;
+    height: 100vh;
+    width: 0;
+    background-image: url(../images/mobileNavBcg.jpg);
+    background-size: cover;
+    /* overflow: scroll; */
 }
 .show-nav {
-    height: 270px;
+    /* height: 270px; */
+    width: 100vw;
+    overflow-y: hidden;
+    z-index: -1;
+    padding-top: 4rem;
+    /* background-image: url(../images/mobileNavBcg.jpg); */
+}
+.close {
+    font-size: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 .nav-links a {
     display: block;
@@ -58,11 +75,15 @@
 }
 @media screen and (min-width: 0px) {
     .navbar {
-        position: sticky;
+        position: absolute;
     }
 
     .logo {
         height: 30px;
+    }
+
+    .nav-links {
+        font-size: 2rem;
     }
 }
 
@@ -70,6 +91,10 @@
     .navbar {
         padding: 0 2rem;
     }
+}
+
+@media screen and (min-width: 768px) {
+    
 }
 
 @media screen and (min-width: 992px) {
@@ -93,6 +118,10 @@
         height: auto;
         display: flex;
         background: none;
+        position: relative;
+        width: auto;
+        padding-top: 0;
+        font-size: 1rem;
     }
     .nav-social-links {
         display: flex;

@@ -2,14 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
-  --primaryColor: #3fd0d4;
+  /* original color */
+  /* --primaryColor: #3fd0d4; */
+  --primaryColor: #eb9800;
+  --secondaryColor: #87edfe;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --grey: grey;
-  --mainTransition: all 0.3s linear;
+  --mainTransition: all 0.2s linear;
   --mainSpacing: 4px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
@@ -75,9 +78,9 @@ p {
   color: var(--primaryColor);
 }
 .btn-primary {
-  background: var(--primaryColor);
+  background: var(--mainBlack);
   color: var(--mainWhite);
-  border: 2px solid var(--primaryColor);
+  border: 2px solid var(--mainBlack);
 }
 .btn-primary:hover {
   background: transparent;

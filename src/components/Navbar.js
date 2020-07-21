@@ -38,7 +38,10 @@ const Navbar = () => {
         style={{ transition: '.5s ease-in-out' }}>
             <div className={styles.navCenter}>
                 <div className={styles.navHeader}>
-                    <img src={logo} alt="logo" className={styles.logo} />
+                    <AniLink fade to="/">
+                        <img src={logo} alt="logo" className={styles.logo} />
+                    </AniLink>
+                    
                     <button
                         type="button"
                         className={styles.logoBtn}

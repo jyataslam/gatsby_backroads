@@ -8,7 +8,7 @@
 
 .img-container {
   position: relative;
-  background: var(--primaryColor);
+  background: var(--secondaryColor);
   transition: var(--mainTransition);
 }
 .img {
