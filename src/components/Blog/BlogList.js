@@ -7,7 +7,7 @@ import styles from "../../css/blog.module.css"
 
 const getPosts = graphql`
     query {
-        posts: allContentfulPost(sort: { fields: published, order: DESC }) {
+        posts: allContentfulPosts(sort: { fields: published, order: DESC }) {
             edges {
                 node {
                     title
@@ -33,7 +33,6 @@ const BlogList = () => {
             <Title title="Our" subtitle="Blogs" />
             <div className={styles.center}>
                 {posts.edges.map(({node}) => {
-                    console.log(node)
                     return <BlogCard key={node.id} blog={node} />
                 })}
             </div>

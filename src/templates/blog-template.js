@@ -8,7 +8,7 @@ import styles from "../css/single-blog.module.css"
 
 export const query = graphql`
     query getPost($slug: String!) {
-        post: contentfulPost(slug: { eq: $slug }) {
+        post: contentfulPosts(slug: { eq: $slug }) {
             title
             slug
             published(formatString: "MMMM Do YYYY")
@@ -20,6 +20,7 @@ export const query = graphql`
 `
 
 const blogTemplate = ({ data }) => {
+    console.log('template data', data)
     const {
         title,
         published,
@@ -43,6 +44,7 @@ const blogTemplate = ({ data }) => {
 
                 return (
                     <div>
+                        <h1>This is a entry block</h1>
                         <h1>{title["en-US"]}</h1>
                         <img
                             width="600"
@@ -53,7 +55,7 @@ const blogTemplate = ({ data }) => {
                     </div>
                 )
             },
-        },
+        }
     }
 
     return (
@@ -64,7 +66,7 @@ const blogTemplate = ({ data }) => {
                     <h1>{title}</h1>
                     <h4>published at : {published}</h4>
                     <article className={styles.post}>
-                        {documentToReactComponents(json, options)}
+                        {documentToReactComponents(json)}
                     </article>
                     <AniLink fade to="/blog" className="btn-primary">
                         All Posts

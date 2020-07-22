@@ -13,6 +13,7 @@
 }
 .img {
   transition: var(--mainTransition);
+  height: 240px;
 }
 .img-container:hover .img {
   opacity: 0.3;
@@ -62,5 +63,9 @@
 @media screen and (max-width: 414px) {
   .link {
     font-size: .8rem;
+  }
+
+  .img {
+    height: 200px;
   }
 }

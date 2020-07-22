@@ -9,14 +9,14 @@ exports.createPages = async ({ graphql, actions }) => {
     // get slugs of all tours
     const { data } = await graphql(`
         query {
-            tours: allContentfulTour {
+            tourExample: allContentfulTour {
                 edges {
                     node {
                         slug
                     }
                 }
             }
-            posts: allContentfulPost {
+            post: allContentfulPosts {
                 edges {
                     node {
                         slug
@@ -25,7 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
             }
         }
     `)
-    data.tours.edges.forEach(({ node }) => {
+    data.tourExample.edges.forEach(({ node }) => {
         createPage({
             path: `tours/${node.slug}`,
             component: path.resolve("./src/templates/tour-template.js"),
@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
             },
         })
     })
-    data.posts.edges.forEach(({ node }) => {
+    data.post.edges.forEach(({ node }) => {
         createPage({
             path: `blog/${node.slug}`,
             component: path.resolve("./src/templates/blog-template.js"),
@@ -45,7 +45,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
 
     // Get amount of blog post for pagination style blog template
-    const posts = data.posts.edges;
+    const posts = data.post.edges;
 
     // Get amount of posts per page
     const postsPerPage = 6;

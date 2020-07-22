@@ -12,7 +12,7 @@ import styles from "../css/blog.module.css"
 
 export const query = graphql`
     query getBlogPosts($skip: Int!, $limit: Int!) {
-        posts: allContentfulPost(
+        posts: allContentfulPosts(
             skip: $skip
             limit: $limit
             sort: { fields: published, order: DESC }
