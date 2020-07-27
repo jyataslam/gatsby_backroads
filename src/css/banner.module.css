@@ -23,6 +23,10 @@
   margin-top: 0;
 }
 
+.info {
+  color: var(--colorWhite);
+}
+
 @media screen and (min-width: 0) {
   .banner h1 {
     font-size: 2rem;

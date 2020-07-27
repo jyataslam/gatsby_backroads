@@ -33,3 +33,13 @@
   letter-spacing: var(--mainSpacing);
   line-height: 2;
 }
+.logo {
+  height: 100px;
+  -webkit-filter: invert(90%);
+  filter: invert(90%);
+}
+@media only screen and (max-width: 580px) {
+  .logo {
+    height: 50px;
+  }
+}

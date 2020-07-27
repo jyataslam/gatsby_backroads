@@ -9,6 +9,7 @@ import About from "../components/About"
 import Services from "../components/Services"
 import FeaturedTours from "../components/Home/FeaturedTours"
 import PhotoBlock from "../components/Photo"
+import Contact from '../components/Contact/Contact'
 
 export default ({ data }) => {
     return (
@@ -26,8 +27,9 @@ export default ({ data }) => {
             </StyledHero>
             <About />
             <Services />
-            <PhotoBlock img={data.photoBcg.childImageSharp.fluid} />
             <FeaturedTours />
+            <PhotoBlock img={data.photoBcg.childImageSharp.fluid} />
+            <Contact />
         </Layout>
     )
 }

@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import logo from '../images/logo.png'
 
 import styles from '../css/footer.module.css'
 import links from '../constants/links'
@@ -8,6 +10,9 @@ import socialIcons from '../constants/social-icons'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
+            <AniLink fade to="/">
+                <img className={styles.logo} src={logo} alt="travelwell logo"/>
+            </AniLink>
             <div className={styles.links}>
                 {links.map((item, index) => {
                     return (

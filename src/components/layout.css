@@ -6,10 +6,11 @@
   /* --primaryColor: #3fd0d4; */
   --primaryColor: #eb9800;
   --secondaryColor: #87edfe;
+  --purpleColor: rgb(83, 97, 113);
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
-  --mainGrey: #ececec;
+  --mainGrey: #f3f3f3;
   --darkGrey: #cfcfcf;
   --grey: grey;
   --mainTransition: all 0.2s linear;
@@ -42,7 +43,7 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 h4 {
-  font-family: 'Permanent Marker', cursive;
+  letter-spacing: var(--mainSpacing) !important;
 }
 a {
   text-decoration: none;
@@ -50,6 +51,7 @@ a {
 p {
   margin-bottom: 1.25rem;
   letter-spacing: .5px;
+  color: var(--purpleColor);
 }
 .defaultHero {
   /* min-height: calc(100vh - 62px); */
@@ -61,7 +63,8 @@ p {
   align-items: center;
 }
 .btn-white,
-.btn-primary {
+.btn-primary,
+.btn-action {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
@@ -71,20 +74,30 @@ p {
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 .btn-white:hover {
-  background: var(--mainWhite);
-  color: var(--primaryColor);
+  background: var(--mainGrey);
+  color: var(--mainBlack);
 }
 .btn-primary {
-  background: var(--mainBlack);
-  color: var(--mainWhite);
+  background: transparent;
+  color: var(--mainBlack);
   border: 2px solid var(--mainBlack);
+  font-weight: bold;
+  padding: 13px 24px;
 }
 .btn-primary:hover {
-  background: transparent;
-  color: var(--primaryColor);
+  background: var(--mainGrey);
+  opacity: .7;
+  /* color: var(--primaryColor); */
+}
+.btn-action {
+  background: var(--primaryColor);
+  border: var(--primaryColor);
+}
+.btn-action:hover {
+  opacity: .8;
 }
 main {
   min-height: 100vh;

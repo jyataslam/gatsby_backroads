@@ -6,7 +6,7 @@ const Banner = ({title, info, children}) => {
     return (
         <div className={styles.banner}>
             <h1>{title}</h1>
-            <p>{info}</p>
+            <p className={styles.info}>{info}</p>
             {children}
         </div>
     )
