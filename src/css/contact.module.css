@@ -22,8 +22,11 @@ label {
   font-size: 1rem;
   margin-bottom: 1rem;
   padding: 0.375rem 0.75rem;
-  border: 1px solid var(--darkGrey);
-  border-radius: 0.25rem;
+  /* border: 1px solid var(--darkGrey);
+  border-radius: 0.25rem; */
+  border: none;
+  border-bottom: 1px solid var(--darkGrey);
+  font-family: inherit;
 }
 .submit {
   background-color: var(--primaryColor);

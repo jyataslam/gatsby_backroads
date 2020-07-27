@@ -48,7 +48,7 @@
     width: 100vw;
     overflow-y: hidden;
     z-index: -1;
-    padding-top: 4rem;
+    padding-top: 6rem;
     /* background-image: url(../images/mobileNavBcg.jpg); */
 }
 .close {
@@ -83,7 +83,7 @@
     }
 
     .nav-links {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 }
 

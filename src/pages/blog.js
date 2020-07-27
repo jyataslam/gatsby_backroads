@@ -9,7 +9,8 @@ const blog = ({data}) => {
     return (
         <Layout>
             <SEO title="Blog" />
-            <StyledHero img={data.blogBcg.childImageSharp.fluid}></StyledHero>
+            <StyledHero img={data.blogBcg.childImageSharp.fluid}>
+            </StyledHero>
             <BlogList />
         </Layout>
     )
