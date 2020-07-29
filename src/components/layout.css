@@ -78,7 +78,6 @@ p {
   padding: 0.9rem 1rem;
   letter-spacing: 2px;
   font-size: .85rem;
-  -webkit-appearance: button;
 }
 .btn-white:hover {
   background: var(--mainGrey);
