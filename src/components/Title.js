@@ -5,8 +5,7 @@ const Title = ({ title, subtitle }) => {
     return (
         <TitleWrapper>
             <h4>
-                <span className="title">{title}</span>
-                <span>{subtitle}</span>
+                <span className="title">{title} {subtitle}</span>
             </h4>
         </TitleWrapper>
     )

@@ -1,6 +1,26 @@
 .services {
-  background: var(--mainGrey);
+  /* background: var(--mainGrey); */
   padding: 4rem 0;
+  position: relative;
+}
+.services:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80%;
+  height: .05rem;
+  background: rgba(0,0,0,.1);
+  margin: 0 auto;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.border {
+  position: absolute;
+  border-top: 1px solid var(--mainGrey);
+  left: 10%;
+  right: 10%;
 }
 .center {
   width: 80vw;
@@ -8,6 +28,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-column-gap: 2rem;
+}
+.desc {
+  text-align: center;
+  width: 80vw;
+  margin: 0 auto;
+  color: var(--medGrey);
 }
 .service {
   margin: 2rem 0;
@@ -18,8 +44,11 @@
   padding: 0.5rem;
   display: inline-block;
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
+  /* padding-top: 2rem; */
 }
 .service h4 {
   text-transform: uppercase;
+  border-top: 8px solid var(--primaryColor);
+  padding-top: 1rem;
 }

@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Mulish|Poppins");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Oswald");
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 :root {
   /* original color */
   /* --primaryColor: #3fd0d4; */
-  --primaryColor: #eb9800;
+  --primaryColor: #4c98d6;
   --secondaryColor: #87edfe;
   --purpleColor: rgb(83, 97, 113);
   --mainWhite: #fff;
@@ -12,9 +12,10 @@
   --mainBlack: #222;
   --mainGrey: #f3f3f3;
   --darkGrey: #cfcfcf;
+  --medGrey: #646464;
   --grey: grey;
   --mainTransition: all 0.2s linear;
-  --mainSpacing: 4px;
+  --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -26,7 +27,7 @@
 }
 
 body {
-  font-family: "Mulish", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
@@ -38,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
@@ -51,7 +52,7 @@ a {
 p {
   margin-bottom: 1.25rem;
   letter-spacing: .5px;
-  color: var(--purpleColor);
+  color: var(--mainBlack);
 }
 .defaultHero {
   /* min-height: calc(100vh - 62px); */
@@ -67,14 +68,14 @@ p {
 .btn-action {
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 3px;
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
   padding: 0.9rem 1.6rem;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
-  border-radius: 35px;
+  /* border-radius: 35px; */
 }
 .btn-white:hover {
   background: var(--mainGrey);
@@ -88,8 +89,8 @@ p {
   padding: 13px 24px;
 }
 .btn-primary:hover {
-  background: var(--mainGrey);
-  opacity: .7;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
   /* color: var(--primaryColor); */
 }
 .btn-action {

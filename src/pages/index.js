@@ -25,9 +25,11 @@ export default ({ data }) => {
                     </Link>
                 </Banner>
             </StyledHero>
-            <About />
-            <Services />
             <FeaturedTours />
+            <Services />
+            <About />
+            
+            
             <PhotoBlock img={data.photoBcg.childImageSharp.fluid} />
             <Contact />
         </Layout>
