@@ -1,10 +1,6 @@
 ## How To Start
 
-1.  **Clone the Repo**
-    
-    ```shell
-    git clone https://github.com/jyataslam/gatsby_backroads.git
-    ```
+1.  **Fork the Repo**
     
 3.  **Start developing**
 
