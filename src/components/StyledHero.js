@@ -11,7 +11,7 @@ const StyledHero = ({ img, className, children, home }) => {
 }
 
 export default styled(StyledHero)`
-    min-height: ${props => props.home ? '60vh': '50vh'};
+    min-height: ${props => (props.home ? "100vh" : "50vh")};
     background: ${props =>
         props.home
             ? "linear-gradient(rgba(223, 60, 200, 0), rgba(0, 0, 0, 0.7))"

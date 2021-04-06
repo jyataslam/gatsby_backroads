@@ -9,7 +9,7 @@ import About from "../components/About"
 import Services from "../components/Services"
 import FeaturedTours from "../components/Home/FeaturedTours"
 import PhotoBlock from "../components/Photo"
-import Contact from '../components/Contact/Contact'
+import Contact from "../components/Contact/Contact"
 
 export default ({ data }) => {
     return (
@@ -28,8 +28,7 @@ export default ({ data }) => {
             <FeaturedTours />
             <Services />
             <About />
-            
-            
+
             <PhotoBlock img={data.photoBcg.childImageSharp.fluid} />
             <Contact />
         </Layout>
@@ -45,7 +44,7 @@ export const query = graphql`
                 }
             }
         }
-        blogBcg: file(relativePath: { eq: "blogBcg.jpeg" }) {
+        blogBcg: file(relativePath: { eq: "blogBcg.webp" }) {
             childImageSharp {
                 fluid(quality: 90, maxWidth: 4160) {
                     ...GatsbyImageSharpFluid

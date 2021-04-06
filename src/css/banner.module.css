@@ -55,9 +55,17 @@
     margin-top: 0;
   }
   .banner h1 {
-    font-size: 4rem;
+    font-size: 6rem;
+    line-height: 7rem;
   }
   .banner p {
     font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1450px) {
+  .banner h1 {
+    font-size: 5rem;
+    line-height: 5rem;
   }
 }

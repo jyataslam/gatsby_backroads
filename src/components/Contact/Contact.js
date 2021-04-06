@@ -5,14 +5,14 @@ import styles from "../../css/contact.module.css"
 
 const getContactImages = graphql`
     {
-        defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+        defaultBcg: file(relativePath: { eq: "defaultBcg.webp" }) {
             childImageSharp {
                 fluid(quality: 90, maxWidth: 4160) {
                     ...GatsbyImageSharpFluid
                 }
             }
         }
-        blogBcg: file(relativePath: { eq: "blogBcg.jpeg" }) {
+        blogBcg: file(relativePath: { eq: "blogBcg.webp" }) {
             childImageSharp {
                 fluid(quality: 90, maxWidth: 4160) {
                     ...GatsbyImageSharpFluid
